@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.appsbydmk.jobseeker.activities.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/views_margin_horizontal"
+        android:layout_marginEnd="@dimen/views_margin_vertical"
+        android:layout_marginStart="@dimen/views_margin_vertical"
+        android:layout_marginTop="@dimen/views_margin_horizontal"
+        android:gravity="center"
+        android:text="@string/login_title"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="@dimen/text_size_login_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/views_margin_horizontal"
+            android:layout_marginEnd="@dimen/views_margin_vertical"
+            android:layout_marginStart="@dimen/views_margin_vertical"
+            android:layout_marginTop="@dimen/views_margin_horizontal"
+            android:hint="@string/hint_username"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColorHint="@color/textColorHint" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/views_margin_horizontal"
+            android:layout_marginEnd="@dimen/views_margin_vertical"
+            android:layout_marginStart="@dimen/views_margin_vertical"
+            android:layout_marginTop="@dimen/views_margin_horizontal"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textColorHint="@color/textColorHint" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/views_margin_horizontal"
+            android:layout_marginEnd="@dimen/views_margin_vertical"
+            android:layout_marginStart="@dimen/views_margin_vertical"
+            android:layout_marginTop="@dimen/views_margin_horizontal"
+            android:background="@color/colorPrimary"
+            android:text="@string/text_btn_login"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+</RelativeLayout>
